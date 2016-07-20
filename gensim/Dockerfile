@@ -1,5 +1,5 @@
 FROM frolvlad/alpine-glibc
-MAINTANER Theodore Omtzigt <theo@stillwater-sc.com>
+MAINTAINER Theodore Omtzigt <theo@stillwater-sc.com>
 
 ENV PATH=/opt/conda/bin:$PATH \
     LANG=C.UTF-8 \
