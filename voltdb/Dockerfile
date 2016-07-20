@@ -8,4 +8,4 @@ RUN apt-get update && apt-get install bash wget && \
     tar -xzf voltdb-ent-latest.tar.gz && \
     cd voltdb-ent-*
 
-CMD ["bin/voltdb create"]
+CMD ["bash"]
