@@ -3,9 +3,9 @@ FROM java:8
 MAINTAINER Theodore Omtzigt <theo@stillwater-sc.com>
 
 RUN apt-get update && apt-get install bash wget && \
-    mkdir -p /root/voltdb-ent && cd /root/voltdb-ent && \
+    mkdir -p /root/voltdb && cd /root/voltdb && \
     wget http://downloads.voltdb.com/technologies/server/voltdb-ent-latest.tar.gz && \
     tar -xzf voltdb-ent-latest.tar.gz && \
-    cd voltdb-ent-latest
-WORKDIR /root/voltdb-ent
+    cd voltdb-ent-*
+WORKDIR /root/voltdb/voltdb-ent-*
 CMD /bin/bash
