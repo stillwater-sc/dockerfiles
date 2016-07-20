@@ -7,5 +7,5 @@ RUN apt-get update && apt-get install bash wget && \
     wget http://downloads.voltdb.com/technologies/server/voltdb-ent-latest.tar.gz && \
     tar -xzf voltdb-ent-latest.tar.gz && \
     cd voltdb-ent-*
-WORKDIR /root/voltdb/voltdb-ent-*
-CMD /bin/bash
+
+CMD ["bin/voltdb create"]
